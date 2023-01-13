@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
 :root {
     --red: #DA291C;
     --yellow: #FFD700;
@@ -10,11 +11,80 @@
     --rootsize: 20px;
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
 
 body {
     background-color: var(--yellow);
-    font-family: "Rubik", sans-serif;
+    background-image: url('images/mainbackground.png');
+    font-family: 'Rubik', sans-serif;
     font-size: var(--rootsize);
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+div.container {
+    background-color: var(--white);
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    overflow: hidden;
     
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header a{
+    width: 100%;
+    max-width: 250px;
+}
+
+header a img{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+#cart {
+    position: relative;
+    width: 100%;
+    max-width: 50px;
+}
+
+#cart .label{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+    position: absolute;
+    top: -1.3rem;
+    left: -1.3rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+nav {
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: left:;
+    list-style: none;
+    background-color: var(--red);
+}
+
+li{
+    color: var(--white);
 }
